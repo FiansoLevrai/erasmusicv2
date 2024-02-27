@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Erasmusic </title>
+</head>
+
+<body>
+    <div class="header">
+        <img id="logo" src="assets/media/logo.png">
+        <a id="menu" href="javascript:void(0);" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <video id="bgVideo" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="assets/media/video.mp4" type="video/mp4">
+    </video>
+
+    <!-- overlay menu for navigation -->
+    <div id="myNav" class="overlay">
+        <div class="overlay-header">
+            <img id="logo" src="assets/media/logo-white.png">
+            <a id="close" href="javascript:void(0);" onclick="closeNav()">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+        <div class="overlay-content">
+          <a href="#">HOME</a>
+          <a href="#">EVENTS</a>
+          <a href="#">FIND US</a>
+        </div>
+      </div>
+
+</body>
+
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.display = "block";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.display = "none";
+    }
+    </script>
+
+</html>
